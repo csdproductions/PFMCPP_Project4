@@ -97,6 +97,7 @@ double DoubleType::multiply(double lhs, double rhs)
 
 double DoubleType::divide(double lhs, double rhs)
 {
+    std::cout << "You know you're dividing by zero right? Answer is: ";
     return lhs / rhs;
 }
 
@@ -155,7 +156,7 @@ int main()
     std::cout << "Result of dt.add(): " << dt.add(lhsd, rhsd) << std::endl;
     std::cout << "Result of dt.subtract(): " << dt.subtract(lhsd, rhsd) << std::endl;
     std::cout << "Result of dt.multiply(): " << dt.multiply(lhsd, rhsd) << std::endl;
-    std::cout << "Result of dt.divide(): " << dt.divide(lhsd, rhsd) << std::endl;
+    std::cout << "Result of dt.divide(): " << dt.divide(lhsd, 0.0) << std::endl;
         
 
     IntType it;
